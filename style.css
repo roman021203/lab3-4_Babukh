@@ -1,0 +1,562 @@
+:root {
+    --node-height: 340px;
+    --node-width: 300px;
+    --main-color: #272d29;
+    /* --main-color: #2c2c2c; */
+    --nav-color: #826e6e;
+    --node-border-color: rgb(182, 27, 0);
+    --buttons-color: #a2c617;
+    --button-color-on-hover: #d5fc3d;
+    --button-border-color: rgb(143, 58, 146);
+    --button-box-shadow: rgb(161, 161, 161);
+    --button-text-color: #ffffff;
+    --delete-color: #b94242;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.inerphoto{
+    height: 250px;
+    width: 250px;
+    margin: 25px;
+}
+
+body {
+    margin: 0;
+}
+
+.text {
+    font-family: "Pacifico", sans-serif;
+}
+
+.Reem-Kufi {
+    font-family: "Reem Kufi", sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline:hover {
+    text-decoration: none;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-21 {
+    font-size: 21px !important;
+}
+
+.font-size-24 {
+    font-size: 24px;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.header-text {
+    font-size: 30px;
+}
+
+.main-color-bck {
+    background-color: var(--main-color);
+}
+
+.nav-color-bck {
+    background-color: var(--nav-color);
+}
+
+.bck-delete-color {
+    background-color: var(--delete-color);
+}
+
+.bck-button-color {
+    transition: ease-in-out 0.2s;
+    background-color: var(--buttons-color);
+}
+
+.bck-button-color:hover {
+    background-color: #b7cf52;
+}
+
+.bck-white {
+    background-color: #ffffff;
+}
+
+.delete-color {
+    color: var(--delete-color);
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.nav-color {
+    color: var(--nav-color);
+}
+
+.this-page-color {
+    color: var(--buttons-color);
+}
+
+.black-color {
+    color: rgba(71, 71, 71, 1)
+}
+
+.grey-color {
+    color: rgba(71, 71, 71, 0.8);
+}
+
+.float-right {
+    float: right;
+}
+
+.margin0 {
+    margin: 0;
+}
+
+.margin-top-2 {
+    margin-top: 2px;
+}
+
+.margin-top-3 {
+    margin-top: 3px;
+}
+
+.margin-top-7 {
+    margin-top: 7px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 5px;
+}
+
+.margin-bottom-7 {
+    margin-bottom: 7px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-left-rigtt-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.padding-left-rigtt-20 {
+    padding: 0 20px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.border {
+    border: 1px solid rgba(71, 71, 71, 1);
+}
+
+.padding-for-x {
+    padding: 0px 8px;
+}
+
+.padding-for-cart {
+    padding: 6.5px 5px;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.up-down-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centre-grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-pointer {}
+
+.hover-pointer:hover {
+    cursor: pointer;
+}
+
+.login-signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.href-cart,
+.href-cart:active,
+.href-cart:visited,
+.href-cart:hover {
+    text-decoration: none;
+    color: rgb(228, 228, 115);
+}
+
+.cart {
+    margin-left: 20px;
+}
+
+.buttons {
+    display: inline-block;
+
+    margin: 20px 0px 15px;
+}
+
+.filter-button {
+    margin: 0 20px;
+    padding: 2px 7px;
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+.container {
+    width: 960px;
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, calc(var(--node-width) + 20px));
+}
+
+.node {
+    transition: cubic-bezier(0.4, 0, 1, 1) 0.2s;
+
+    display: inline-block;
+    vertical-align: bottom;
+    float: none;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+
+    width: var(--node-width);
+
+    margin: 5px 10px;
+
+    border-bottom: solid 1px;
+    border-color: rgba(71, 71, 71, 0.4);
+
+    background-color: #ffffff;
+}
+
+.node-arrow {
+    opacity: 1;
+    height: var(--node-height);
+    width: var(--node-width);
+
+    margin: 5px 10px;
+
+    border-bottom: solid 1px;
+    border-color: rgba(71, 71, 71, 0.4);
+}
+
+.node-arrow:hover {
+    box-shadow: 0px 0px 6px rgba(71, 71, 71, 0.4);
+}
+
+.node:hover {
+    z-index: 10;
+
+    transform: scale(1.05);
+
+    box-shadow: 0px 0px 6px rgba(71, 71, 71, 0.4);
+}
+
+.node:hover .photo {
+    opacity: 0.8;
+    filter: blur(0.4px);
+}
+
+.node:hover .text-on-photo {
+    opacity: 1;
+    display: block;
+    box-shadow: 0px 0px 6px rgba(71, 71, 71, 0.4);
+}
+
+.photo {
+    transition: cubic-bezier(0.4, 0, 1, 1) 0.2s;
+
+    display: block;
+    opacity: 1;
+    transition: .5s ease;
+
+    height: 300px;
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.photo:hover {
+    transform: scale(1.1);
+}
+
+.text-on-photo {
+    display: none;
+    text-align: start;
+    opacity: 0;
+
+    width: var(--node-width);
+
+    padding: 10px 20px;
+}
+
+.price {
+    position: sticky;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-margin {
+    margin-top: -4px;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -3px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.arrow {
+    height: 100%;
+    width: 100%;
+}
+
+.amount-cont {
+    width: 30px;
+    text-align: start;
+}
+
+.sum-cart {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0;
+}
+
+.top-ancor {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
+
+.up-arrow {
+    transition: cubic-bezier(0.58, 0.15, 0.79, 0.5);
+    transition-duration: 0.5s;
+
+    animation: 3s linear 1s slidein;
+
+    display: none;
+    position: fixed;
+    top: calc(100% - 40px);
+    left: calc(100% - 40px);
+}
+
+.news-main {
+    display: inline-block;
+
+    width: 100%;
+    height: auto;
+
+    margin-top: 40px;
+}
+
+.news-title {
+    width: auto;
+    float: left;
+}
+
+.news-node {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-input{
+    margin: 5px 0;
+}
+
+.signin-btn{
+    padding: 2px 7px;
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+/* * MODALS */
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-cont {
+    background-color: rgb(228, 228, 115);
+
+    margin: auto;
+    padding: 20px;
+
+    border: 1px solid #000000;
+
+    width: 80%;
+
+    font-family: 'JetBrains Mono';
+}
+
+.subcribe-cont {
+    background-color: rgb(115, 115, 115);
+
+    margin: auto;
+    padding: 30px;
+    width: 300px;
+
+    border: 1px solid #000000;
+
+    font-family: 'JetBrains Mono';
+}
+
+.reject-span {
+    float: right;
+}
+
+.sub-span:hover,
+.reject-span:hover {
+    cursor: pointer;
+}
+
+.close-sub {
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-top: -40px;
+    margin-right: -115px;
+
+    font-family: 'JetBrains Mono';
+    font-size: 28px;
+}
+
+.close {
+    color: rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-top: -20px;
+    margin-right: -10px;
+
+    font-family: 'JetBrains Mono';
+    font-size: 28px;
+}
+
+.close-hover {
+    font-family: 'JetBrains Mono';
+    font-size: 28px;
+}
+
+.close-hover:hover,
+.close-hover:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

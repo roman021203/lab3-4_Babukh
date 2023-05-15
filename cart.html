@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initialscale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+    <title>JS_2</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="JS/charts.js"></script>
+    
+    <a href="" name="top" class="top-anchor"></a>
+
+    <nav class="nav header-text nav-color-bck">
+        <a href="./index.html" class="href-cart">
+            <p class="text ">RomanceStore</p>
+        </a>
+        <a href="./cart.html" class="href-cart">
+            <i class="fa fa-shopping-cart cart this-page-color" style="font-size:36px"></i>
+        </a>
+        <a href="./news.html" class="href-cart">
+            <i class="fa fa-newspaper-o cart" aria-hidden="true" style="font-size:36px"></i>
+        </a>
+    </nav>
+
+    <div id="subcribe" class="modal">
+        <div class="subcribe-cont">
+            <span id="sub-span" class="sub-span">Підписатися</span>
+            <span id="reject-span" class="reject-span">Відхилити</span>
+            <span id="close-sub" class="close-sub">x</span>
+        </div>
+    </div>
+
+    <section>
+        <div class="buttons-parent centre">
+            <div class="buttons" id="cart-buttons">
+                <label class="filter-button text hover-pointer underline black-color"
+                    onclick="GetNodesForCart('', true)">All</label>
+                <label class="filter-button text hover-pointer underline black-color"
+                    onclick="GetNodesForCart('', true, true)">A↓</label>
+                <label class="filter-button text hover-pointer underline black-color"
+                    onclick="GetNodesForCart('', true, false, true)">Z↑</label>
+                <label class="filter-button text hover-pointer underline black-color"
+                    onclick="GetNodesForCart('', true, false, false, true)">min-max</label>
+                <label class="filter-button text hover-pointer underline black-color"
+                    onclick="GetNodesForCart('', true, false, false, false, true)">max-min</label>
+                <label class="filter-button text hover-pointer underline black-color" onclick="DeleteAllFromCart()">
+                    Delete
+                    All</label>
+            </div>
+        </div>
+
+        <div class="centre">
+            <div class="container" id="images-container">
+                <!-- Зображення та опис будуть додаватися динамічно через JavaScript -->
+            </div>
+        </div>
+
+
+        <div id="sum-cart">
+
+        </div>
+    </section>
+
+    <div class="centre">
+        <div class="text" id="myChart" style="height:600px">
+        </div>
+    </div>
+
+    <div class="up-arrow href-cart" id="up-arrow">
+        <a href="#top" class="">
+            <i class="fa fa-arrow-up" style="font-size:36px; color: #000000"></i>
+        </a>
+    </div>
+
+    <script src="JS/cart.js"></script>
+    <script src="JS/init_cart.js"></script>
+</body>
+
+</html>
